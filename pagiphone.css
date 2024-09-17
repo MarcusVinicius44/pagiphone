@@ -1,0 +1,145 @@
+*{
+    margin: 0;/*resetando a margem*/
+    box-sizing: border-box;
+    list-style: none;/*tiram os pontinhos que ficam ao lado do elemento da lista*/
+    text-decoration: none;/*tira a linha embaixo dos nome*/
+    padding: 0;
+    font-family: sans-serif;
+}
+body{
+    background: #e8e6e7;
+}
+.iphonetitle{
+    margin-bottom: 2rem;
+}
+header{
+    background: #1d1d1f;
+    padding: 20px 70px; /*20 pixels de altura e 70 de largura*/
+}
+.navegacao{
+    display: flex;/*para os elementos ficarem um ao lado do outro*/
+    align-items: center;/*alinhar horizontalmente*/
+    justify-content: space-between;/*para cada um dos itens separados ficarem em uma extremidade*/
+}
+.navegacao .logo{
+    width: 50px;/*largura*/
+}
+.navegacao ul{
+    align-items: center;
+    display: flex;/*para CADA item da ul ficarem alinhados um ao lado do outro*/
+    gap: 60px;/*aumenta o espaçamento sobre os itens da ul*/
+}
+.navegacao ul li a{
+    color: #888;
+    font-weight: 600;/*para engrossar a letra*/
+    padding-bottom: 4px;
+    transition: all 0.5s ease-in-out;
+}
+.navegacao ul li a:hover{
+    color: aliceblue;
+    border-bottom: 1px solid #fff;/*para criar uma linha em baixo da opção que o cursor está em cima*/
+}
+.check{ /*para mostrar em que página estamos*/
+    color: #fff;
+    border-bottom: 1px solid #fff;
+}
+main section{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 10rem;
+}
+.main-text{
+    width: 15rem;/*diminuindo a largura da imagem*/
+    margin-bottom: 3vh;/*vh afasta os elementos verticalmente*/
+}
+.main-text h3{
+    font-size: 3rem;
+    margin-bottom: 2rem;/*para afastar do elemento que está embaixo*/
+    width: 30rem;
+}
+.main-text p{
+    margin-bottom: 1.5rem;
+    width: 27rem;
+}
+.main-text h6{
+    color:#5f5f5f;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+}
+.main-text .btn{
+    padding: 10px 25px;/*determina a altura e largura do botão*/
+    background: #0071e3;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 1.5rem;
+    transition: all 0.5s;
+}
+.main-text .btn:hover{
+    opacity: .75;
+}
+.text h5{
+    font-size: 1rem;
+    color: #444;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.content{
+    display:flex;
+    align-items: center;
+    gap: 10px;
+}
+.content span{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 1px 1px #888;/*para mudar a sombra da box*/
+    transition: all 0.5s;
+}
+.content .span:hover{
+    opacity: .80;
+}
+#black{
+    background: #1d1d1fde;
+    transition: all 0.8s;
+}
+#blue{
+    background: #86b0c2;
+    transition: all 0.8s;
+
+}
+#yellow{
+    background:#f8f0bd;
+    transition: all 0.8s;
+
+}
+#green{
+    background: #b0da7d;
+    transition: all 0.8s;
+
+}
+#pink{
+    background: #f8c7c7;
+    transition: all 0.8s;
+
+}
+.main-img{
+    transition: all 1s ease;
+    z-index: 100;/*deixa a imagem por cima de tudo*/
+}
+.main-img img{
+    width: 300px;
+    transform: rotate(-6deg);
+}
+.circle{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #1d1d1fde;
+    clip-path: circle(800px at right 1000px);/*cria um circulo na direita do nosso site que ficara por baixo da nossa imagem*/
+    transition: all 0.8s;
+
+}

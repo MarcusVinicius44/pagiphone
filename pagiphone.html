@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="pagiphone.css">
+    <title>Iphone</title>
+</head>
+<body>
+    <header>
+        <nav class="navegacao">
+            <a href="#"><img src="logo.png" alt="logo" class="logo"></a>
+            <ul>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">Ipad</a></li>
+                <li><a href="#" class="check">Iphone</a></li>
+                <li><a href="#">Smartwartch</a></li>
+                <li><a href="#">Airpods</a></li>
+                <li><a href="#">Só na apple</a></li>
+                <li><a href="#">Suporte</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="circle"></div>
+          <div class="main-text">
+            <img src="iphone15.png" alt="iphone 15" class="iphonetitle">
+            <h3>Seu novo desejo</h3>
+            <p>com entrada USB-C, aposentando o tão criticado Lightning.<br>
+            Lente que produz fotos de 48 megapixels, atualizações no modo retrato e função telefoto são as principais novidades em câmeras no iPhone 15.</p>
+            <h6>A partir de R$ 608,25/mês ou R$ 7.299</h6>
+            <a href="#"class=btn>Comprar</a>
+            <div class="text">
+                <h5>Escolha a cor:</h5>
+            </div>
+            <div class="content">
+                <span id="black" onclick="trocaimg('iphoneblack.png'); mudarcirculo('#1d1d1fde')"></span>
+                <span id="blue" onclick="trocaimg('iphoneblue.png');  mudarcirculo('#86b0c2')"></span>
+                <span id="yellow" onclick="trocaimg('iphoneyellow.png'); mudarcirculo('#f8f0bd')"></span>
+                <span id="green" onclick="trocaimg('iphonegreen.png'); mudarcirculo('#d4ebb7')"></span>
+                <span id="pink" onclick="trocaimg('iphonepink.png'); mudarcirculo('#f8c7c7')"></span>
+            </div>
+        </div>  
+          <div class="main-img">
+            <img src="iphoneblack.png" alt="preto" id="phone">
+            
+          </div>
+        </section>
+    </main>
+    <script type="text/javascript">
+        /*função de mudar o celular*/
+        function trocaimg(e) {
+            document.querySelector('#phone').src = e;
+        }
+        function mudarcirculo(color){
+            const circle =  document.querySelector('.circle');
+            circle.style.background = color;
+        }
+    </script>
+</body>
+</html>
